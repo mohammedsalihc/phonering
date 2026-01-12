@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@common/*": ["packages/common/*"],
+      "@logger/*": ["packages/logger/*"],
+      "@config/*": ["packages/config/*"],
+      "@types/*": ["packages/types/*"]
+    },
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true
+  }
+}
