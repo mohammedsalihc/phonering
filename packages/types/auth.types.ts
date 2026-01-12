@@ -1,7 +1,6 @@
-export interface IRequest extends Request{
-  
-}
+import type { Request } from "express";
+import type { JwtPayload } from "jsonwebtoken";
 
-export interface IResponse extends Response{
-
+export interface IRequest extends Request {
+  user?: JwtPayload;
 }
