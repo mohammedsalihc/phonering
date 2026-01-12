@@ -7,7 +7,7 @@
       "@common/*": ["packages/common/*"],
       "@logger/*": ["packages/logger/*"],
       "@config/*": ["packages/config/*"],
-      "@types/*": ["packages/types/*"]
+      "@auth/*": ["packages/types/*"]
     },
     "strict": true,
     "esModuleInterop": true,
