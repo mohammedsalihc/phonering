@@ -1,5 +1,6 @@
-import {IRequest,IResponse} from "@auth/auth.types"
+
 import { RegisterService } from "./auth.service"
+import { IRequest, IResponse } from "./auth.types";
 
 export const Register = async (req:IRequest,res:IResponse)=>{
    try{
