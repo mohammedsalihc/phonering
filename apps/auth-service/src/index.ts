@@ -1,8 +1,8 @@
 import dotenv from 'dotenv';
 dotenv.config();    
 import app from './app';
-import { connectDB } from './database/mongo';
 import { connectNATS } from './utils/nats';
+import { connectDB } from './database/mongo';
 
 const port = process.env.PORT || 4000;
 
