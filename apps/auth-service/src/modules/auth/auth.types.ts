@@ -1,12 +1,15 @@
 import { JwtPayload } from "jsonwebtoken";
 import {Request,Response} from "express";
+import { ERole } from "./auth.enum";
 export interface IUser{
   name?:string,
   phone?:string,
+  role?:ERole
 }
 
 export interface IAuth extends IUser{
- password?:string,
+ password:string,
+ role?:ERole
  user?:string | IUser
 }
 
