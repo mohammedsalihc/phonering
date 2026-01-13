@@ -1,4 +1,5 @@
-import { IResponse } from "../modules/auth/auth.types"
+import { IResponse } from "../modules/user/user.types";
+
 
 export const JsonResponse = (response:IResponse,result?:any)=> {
    if(result){
