@@ -1,17 +1,17 @@
 import { JwtPayload } from "jsonwebtoken";
 import { Request, Response } from "express";
 import { ERole } from "./auth.enum";
+import { ObjectId } from "mongoose";
 
 export interface IUser {
   name?: string,
   phone?: string,
-  role?: ERole
+  role?: ERole,
+  auth?:string
 }
-export interface AuthDoc extends IAuth {
-  _id: string;
-}
+
 export interface IAuth extends IUser {
-  _id:string,
+  _id?:string,
   password?: string,
   role?: ERole
   user?: string | IUser

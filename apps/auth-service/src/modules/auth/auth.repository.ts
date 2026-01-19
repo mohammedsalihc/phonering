@@ -2,7 +2,7 @@ import { AuthModel } from "./auth.model";
 import { IAuth, IUser } from "./auth.types";
 
 
-export const CreateAuth = async (auth:IAuth):Promise<IAuth>=>{
+export const CreateAuth = async (auth:IAuth):Promise<IAuth|any>=>{
     return await AuthModel.create(auth)
 } 
 

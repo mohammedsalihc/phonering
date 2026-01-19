@@ -1,6 +1,5 @@
 import { NextFunction } from "express";
 import { ApiError } from "../utils/ApiError";
-import { success } from "zod";
 import { IRequest, IResponse } from "../modules/user/user.types";
 
 export const ErrorHandler = (err:any,req:IRequest,res:IResponse,next:NextFunction)=>{
