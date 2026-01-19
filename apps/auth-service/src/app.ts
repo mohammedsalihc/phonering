@@ -9,7 +9,7 @@ app.use((req, res, next) => {
         req.body = req.body || {};
         next();
  });
-app.use('/auth',auth_routes)
+app.use('/',auth_routes)
 app.get('/health', (req, res) => {
     res.send('Auth Service is running..');
 });
