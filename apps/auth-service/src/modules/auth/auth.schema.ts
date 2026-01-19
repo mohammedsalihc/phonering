@@ -1,8 +1,6 @@
 import { z } from "zod";
 
 export const registerSchema = z.object({
-  _id: z
-  .string(),
   name: z
     .string()
     .min(1, { message: "Name is required" })
