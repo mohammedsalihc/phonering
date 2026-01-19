@@ -13,5 +13,5 @@ export const RegisterService = async (body:Partial<IAuth>)=>{
     body.password = await bcrypt.hash(body.password as string,10)
     const auth = await CreateAuth({name:body?.name,phone:body?.phone,password:body?.password,role:ERole.USER})
     const token =  GenerateToken(auth);
-    return token;
+    return {token,auth};
 }
